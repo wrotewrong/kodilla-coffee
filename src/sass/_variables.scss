@@ -1,0 +1,23 @@
+$color-primary: #bea67c;
+$color-light: #fff;
+$color-dark: #000;
+
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+$base-size: 12px;
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
