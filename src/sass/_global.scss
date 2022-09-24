@@ -64,7 +64,7 @@ nav {
 
 header {
   position: relative;
-  background: url(../images/background.png);
+  background: url(../images/background.jpg);
   background-size: cover;
   height: 100vh;
 
@@ -138,4 +138,28 @@ header {
     font-weight: $font-regular;
     text-decoration: none;
   }
+}
+
+#home {
+  display: none;
+}
+
+#products {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+#home.active {
+  display: block;
+}
+
+#products.active {
+  display: block;
+}
+
+#contact.active {
+  display: block;
 }
