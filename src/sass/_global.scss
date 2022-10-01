@@ -11,6 +11,25 @@ body {
   padding: 0;
 }
 
+h2 {
+  text-align: center;
+  font-size: $base-size * 6.25;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color: $color-primary;
+  letter-spacing: $base-size * 1.25;
+  line-height: 100px;
+
+  &::after {
+    @include horizontal-center;
+    bottom: -10%;
+    content: '';
+    width: 600px;
+    height: 6px;
+    background-color: $color-primary;
+  }
+}
+
 #home {
   display: none;
 }

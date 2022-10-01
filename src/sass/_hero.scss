@@ -9,7 +9,6 @@ nav {
     justify-content: space-between;
 
     .nav-logo {
-      //   margin-left: 20px;
       p {
         text-transform: uppercase;
         color: $color-light;
@@ -91,7 +90,6 @@ nav {
       flex-basis: 100%;
       justify-content: flex-end;
       flex-wrap: wrap;
-      //   align-content: center;
       text-align: center;
     }
 
@@ -107,7 +105,7 @@ nav {
 
     &::after {
       @include horizontal-center;
-      top: 150%;
+      top: 125%;
       content: '';
       width: 300px;
       height: 6px;
@@ -146,17 +144,21 @@ nav {
       padding: 0 20px;
     }
   }
+
   .hero {
     .title {
       justify-content: center;
+
       .title-left {
         justify-content: center;
       }
+
       .title-right {
         justify-content: center;
       }
+
       &::after {
-        top: 125%;
+        top: 110%;
       }
     }
   }
@@ -178,12 +180,14 @@ nav {
         margin-top: 30px;
         flex-basis: 90%;
         text-align: center;
+
         li:last-child {
           margin-right: 0px;
         }
       }
     }
   }
+
   .hero {
     .title {
       h1 {
@@ -191,6 +195,7 @@ nav {
         line-height: 80px;
         letter-spacing: 15px;
       }
+
       &::after {
         width: 200px;
       }
@@ -216,14 +221,30 @@ nav {
       .title-right {
         flex-wrap: nowrap;
       }
+
       h1 {
         font-size: 60px;
         line-height: 60px;
         letter-spacing: 10px;
       }
     }
+
     .icon-arrow-down {
       bottom: 0;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 800px) {
+  nav {
+    .nav-flex {
+      .nav-links {
+        margin-top: 0;
+      }
+
+      .nav-logo {
+        display: none;
+      }
     }
   }
 }
