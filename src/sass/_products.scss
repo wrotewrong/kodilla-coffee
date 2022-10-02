@@ -2,6 +2,7 @@ article:nth-child(2n) {
   .product-text {
     order: 2;
     padding-left: 100px;
+
     p {
       margin-right: 0;
     }
@@ -25,6 +26,7 @@ article:nth-child(2n) {
 .product-list {
   overflow: hidden;
 }
+
 .product {
   margin-bottom: 80px;
 
@@ -159,18 +161,6 @@ article:nth-child(2n) {
       padding: 20px 100px 40px 100px;
     }
   }
-
-  .products-title {
-    h2 {
-      font-size: $base-size * 5;
-      letter-spacing: $base-size * 0.85;
-      margin: 40px 0 100px 0;
-
-      &::after {
-        width: 500px;
-      }
-    }
-  }
 }
 
 @media (max-width: 500px) {
@@ -178,18 +168,6 @@ article:nth-child(2n) {
     .product-text,
     .product-img {
       padding: 10px 25px 30px 25px;
-    }
-  }
-
-  .products-title {
-    h2 {
-      font-size: $base-size * 4;
-      letter-spacing: $base-size * 0.65;
-      margin: 30px 0 80px 0;
-
-      &::after {
-        width: 350px;
-      }
     }
   }
 }
