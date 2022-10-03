@@ -1,0 +1,92 @@
+.contact-title {
+  position: relative;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+
+  label {
+    color: $color-dark;
+    font-size: $base-size * 2.5;
+    letter-spacing: $base-size * 0.5;
+    line-height: 100px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  }
+
+  input,
+  textarea {
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+    font-size: $base-size * 2.5;
+    border: 3px solid $color-dark;
+    line-height: 60px;
+  }
+
+  button {
+    background-color: $color-primary;
+    color: $color-light;
+    font-size: $base-size * 2.5;
+    letter-spacing: $base-size * 0.5;
+    line-height: 80px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    padding: 0 60px;
+    margin: 40px 0 40px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  form {
+    width: 500px;
+
+    label {
+      font-size: $base-size * 2;
+      line-height: 70px;
+    }
+
+    input,
+    textarea {
+      line-height: 30px;
+      font-size: $base-size * 2;
+    }
+
+    button {
+      font-size: $base-size * 2;
+      line-height: 60px;
+      padding: 0 50px;
+      margin: 40px 0 40px 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+
+    label {
+      font-size: $base-size * 1.5;
+      line-height: 40px;
+    }
+
+    input,
+    textarea {
+      border-width: 2px;
+      line-height: 30px;
+      font-size: $base-size * 1.52;
+    }
+
+    button {
+      font-size: $base-size * 1.5;
+
+      line-height: 40px;
+
+      padding: 0 40px;
+      margin: 40px 0 40px 0;
+    }
+  }
+}

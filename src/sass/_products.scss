@@ -11,7 +11,6 @@ article:nth-child(2n) {
 
 .products-title {
   position: relative;
-  margin: 40px 0 100px 0;
 }
 
 .product-img img {
@@ -23,11 +22,12 @@ article:nth-child(2n) {
   padding: 0 24px;
 }
 
-.product-list {
+.products-wrapper {
   overflow: hidden;
 }
 
 .product {
+  margin-top: 50px;
   margin-bottom: 80px;
 
   h3 {

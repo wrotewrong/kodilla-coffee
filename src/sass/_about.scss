@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  background: url(../images/about-us.jpg);
+  background: url(../images/about-us.avif);
   background-size: cover;
 
   &::after {
@@ -60,6 +60,7 @@
       p {
         font-size: $base-size * 2.5;
       }
+
       p:last-child {
         padding-bottom: 150px;
       }
@@ -72,6 +73,7 @@
       p {
         font-size: $base-size * 2;
       }
+
       p:last-child {
         padding-bottom: 125px;
       }
@@ -86,6 +88,7 @@
         width: 100%;
         font-size: $base-size * 1.5;
       }
+
       p:last-child {
         text-align: center;
         padding-bottom: 100px;

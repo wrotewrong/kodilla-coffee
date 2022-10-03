@@ -55,7 +55,7 @@ nav {
 
 .hero {
   position: relative;
-  background: url(../images/background.jpg);
+  background: url(../images/background.avif);
   background-size: cover;
   height: 100vh;
 
@@ -119,22 +119,23 @@ nav {
     z-index: 2;
     font-size: 34px;
     letter-spacing: 7px;
+    // line-height: 80px;
     text-transform: uppercase;
     color: $color-light;
     font-weight: $font-regular;
     text-decoration: none;
-  }
 
-  .icon-arrow-down {
-    @include horizontal-center;
-    bottom: 5%;
-    z-index: 2;
-    font-size: 34px;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-    color: $color-light;
-    font-weight: $font-regular;
-    text-decoration: none;
+    .icon-arrow-down {
+      @include horizontal-center;
+      bottom: -60px;
+      z-index: 2;
+      font-size: 34px;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      color: $color-light;
+      font-weight: $font-regular;
+      text-decoration: none;
+    }
   }
 }
 
