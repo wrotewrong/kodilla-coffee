@@ -96,9 +96,9 @@ nav {
     h1 {
       color: $color-primary;
       margin: 0;
-      font-size: 100px;
+      font-size: $base-size * 8.3;
       line-height: 100px;
-      letter-spacing: 20px;
+      letter-spacing: $base-size * 1.7;
       text-transform: uppercase;
       font-weight: $font-bold;
     }
@@ -117,9 +117,8 @@ nav {
     @include horizontal-center;
     bottom: 10%;
     z-index: 2;
-    font-size: 34px;
-    letter-spacing: 7px;
-    // line-height: 80px;
+    font-size: $base-size * 2.8;
+    letter-spacing: $base-size * 0.6;
     text-transform: uppercase;
     color: $color-light;
     font-weight: $font-regular;
@@ -129,8 +128,8 @@ nav {
       @include horizontal-center;
       bottom: -60px;
       z-index: 2;
-      font-size: 34px;
-      letter-spacing: 7px;
+      font-size: $base-size * 2.8;
+      letter-spacing: $base-size * 0.6;
       text-transform: uppercase;
       color: $color-light;
       font-weight: $font-regular;
@@ -192,9 +191,9 @@ nav {
   .hero {
     .title {
       h1 {
-        font-size: 80px;
+        font-size: $base-size * 6.7;
         line-height: 80px;
-        letter-spacing: 15px;
+        letter-spacing: $base-size * 1.25;
       }
 
       &::after {
@@ -208,25 +207,32 @@ nav {
   .hero {
     .title {
       h1 {
-        font-size: 60px;
+        font-size: $base-size * 5;
         line-height: 60px;
-        letter-spacing: 10px;
+        letter-spacing: $base-size * 0.8;
       }
     }
   }
 }
 
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) and (max-height: 650px) {
   .hero {
     .title {
+      justify-content: center;
+
+      .title-left {
+        justify-content: center;
+      }
+
       .title-right {
         flex-wrap: nowrap;
+        justify-content: center;
       }
 
       h1 {
-        font-size: 60px;
+        font-size: $base-size * 5;
         line-height: 60px;
-        letter-spacing: 10px;
+        letter-spacing: $base-size * 0.8;
       }
     }
 
@@ -236,7 +242,7 @@ nav {
   }
 }
 
-@media (orientation: landscape) and (max-height: 500px) and (max-width: 800px) {
+@media (orientation: landscape) and (max-height: 650px) and (max-width: 800px) {
   nav {
     .nav-flex {
       .nav-links {

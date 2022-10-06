@@ -5,6 +5,14 @@ export const select = {
   containerOf: {
     productList: '#product-list',
     pages: '#pages',
+    discoverBtn: '.hero a',
+    contact: '#contact',
+    submitBtn: 'form button',
+    input: {
+      name: '#name',
+      title: '#title',
+      message: '#message',
+    },
   },
   db: {
     url: '//localhost:3131',
@@ -15,9 +23,18 @@ export const select = {
   },
 };
 
+export const displayContent = {
+  home: ['products', 'home'],
+  products: ['products'],
+  contact: ['contact'],
+};
+
 export const classNames = {
   pages: {
     active: 'active',
+  },
+  input: {
+    error: 'error',
   },
 };
 

@@ -1,29 +1,16 @@
 import { select, templates } from './settings.js';
+import { createDOMFromHTML } from './utils.js';
 
 class Product {
-  constructor(id, data) {
+  constructor(data) {
     const thisProduct = this;
 
-    thisProduct.id = id;
     thisProduct.data = data;
-    thisProduct.log();
     thisProduct.render();
-  }
-
-  log() {
-    const thisProduct = this;
-    console.log(thisProduct);
-    console.log(thisProduct.data);
   }
 
   render() {
     const thisProduct = this;
-
-    const createDOMFromHTML = function (htmlString) {
-      let div = document.createElement('div');
-      div.innerHTML = htmlString.trim();
-      return div.firstChild;
-    };
 
     const generatedHTML = templates.product(thisProduct.data);
 

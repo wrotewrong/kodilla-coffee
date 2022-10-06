@@ -24,6 +24,14 @@ form {
     font-size: $base-size * 2.5;
     border: 3px solid $color-dark;
     line-height: 60px;
+
+    &.error {
+      border-color: $color-form-error;
+    }
+
+    &::placeholder {
+      color: $color-form-error;
+    }
   }
 
   button {
